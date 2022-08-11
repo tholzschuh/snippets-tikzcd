@@ -1,14 +1,19 @@
 {
   "name": "snippets-tikzcd",
   "displayName": "snippets-tikzcd",
-  "description": "Provides snippets to quickly generator LaTeX code for a variety of tikzcd-diagrams.",
-  "version": "0.0.1",
+  "description": "Provides snippets to quickly generate LaTeX code for a variety of tikzcd-diagrams.",
+  "publisher": "tholzschuh",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.70.0"
   },
   "categories": [
     "Snippets"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tholzschuh/snippets-tikzcd.git"
+  },
   "contributes": {
     "snippets": [
       {
