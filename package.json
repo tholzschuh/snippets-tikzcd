@@ -1,0 +1,20 @@
+{
+  "name": "snippets-tikzcd",
+  "displayName": "snippets-tikzcd",
+  "description": "Provides snippets to quickly generator LaTeX code for a variety of tikzcd-diagrams.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "latex",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}

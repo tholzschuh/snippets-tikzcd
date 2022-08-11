@@ -1,0 +1,567 @@
+{
+	//
+	//   Squares
+	//
+
+	"Commutative Square": {
+		"prefix": [ "square", "commutative square", "diagram", "square" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+		 	"    ${1:Y} \\arrow[r] \\arrow[d] ",
+			"      & ${2:X} \\arrow[d] \\\\\\",
+			"    ${3:T} \\arrow[r]",
+			"      & ${4:S}",
+			"\\end{tikzcd}"
+		],
+		"description": "A commutative square."
+	  },
+
+	  "Commutative Square rr": {
+		"prefix": [ "square: rr", "commutative square rr", "diagram", "square" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+		 	"    ${1:Y} \\arrow[rr] \\arrow[d]",
+			"      & & ${2:X} \\arrow[d] \\\\\\",
+			"    ${3:T} \\arrow[rr]",
+			"      & & ${4:S}",
+			"\\end{tikzcd}"
+		],
+		"description": "A rr commutative square."
+	  },
+
+	  "Commutative Square rrdd": {
+		"prefix": [ "square: rrdd", "commutative square rrdd", "diagram", "square" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+		 	"    ${1:Y} \\arrow[rr] \\arrow[dd]",
+			"      & & ${2:X} \\arrow[dd] \\\\\\",
+			"        \\\\\\",
+			"    ${3:T} \\arrow[rr]",
+			"      & & ${4:S}",
+			"\\end{tikzcd}"
+		],
+		"description": "A rrdd commutative square."
+	  },
+
+	  "Commutative Square dd": {
+		"prefix": [ "square: dd", "commutative square dd", "diagram", "square" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+		 	"    ${1:Y} \\arrow[r] \\arrow[dd]",
+			"      & ${2:X} \\arrow[dd] \\\\\\",
+			"        \\\\\\",
+			"    ${3:T} \\arrow[r]",
+			"      & ${4:S}",
+			"\\end{tikzcd}"
+		],
+		"description": "A dd commutative square."
+	  },
+
+	  "Double Commutative Square": {
+		"prefix": [ "square: double", "double square", "commutative double square", "diagram", "square" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+		 	"    ${1:Z} \\arrow[r] \\arrow[d] ",
+			"      & ${2:Y} \\arrow[r] \\arrow[d]", 
+			"        & ${3:X} \\arrow[d] \\\\\\",
+			"    ${4:T} \\arrow[r]",
+			"      & ${5:S} \\arrow[r]",
+			"        & ${6:R}",
+			"\\end{tikzcd}"
+		],
+		"description": "A commutative square."
+	  },
+
+	  "Pullback Square": {
+		"prefix": [ "pullback", "pullback square", "cartesian square", "diagram", "square" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+		 	"    ${1:X'} \\arrow[r] \\arrow[d]",
+			"        \\arrow[dr, phantom, very near start, \"{ \\lrcorner }\"]",
+			"      & ${2:X} \\arrow[d] \\\\\\",
+			"    ${3:S'} \\arrow[r]",
+			"      & ${4:S}",
+			"\\end{tikzcd}"
+		],
+		"description": "A pullback square."
+	  },
+
+	  "Pullback Square rr": {
+		"prefix": [ "pullback: rr", "pullback square rr", "cartesian square rr", "diagram", "square" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+		 	"    ${1:X'} \\arrow[rr] \\arrow[d]",
+			"        \\arrow[rrd, phantom, very near start, \"{ \\lrcorner }\"]",
+			"      & & ${2:X} \\arrow[d] \\\\\\",
+			"    ${3:S'} \\arrow[rr]",
+			"      & & ${4:S}",
+			"\\end{tikzcd}"
+		],
+		"description": "A rr pullback square."
+	  },
+
+	  "Pullback Square rrdd": {
+		"prefix": [ "pullback: rrdd", "pullback square rrdd", "cartesian square rrdd", "diagram", "square" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+		 	"    ${1:X'} \\arrow[rr] \\arrow[dd]",
+			"        \\arrow[ddrr, phantom, very near start, \"{ \\lrcorner }\"]",
+			"      & & ${2:X} \\arrow[dd] \\\\\\",
+			"        \\\\\\",
+			"    ${3:S'} \\arrow[rr]",
+			"      & & ${4:S}",
+			"\\end{tikzcd}"
+		],
+		"description": "A rrdd pullback square."
+	  },
+
+	  "Pullback Square dd": {
+		"prefix": [ "pullback: dd", "pullback square dd", "cartesian square dd", "diagram", "square" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+		 	"    ${1:X'} \\arrow[r] \\arrow[dd]",
+			"        \\arrow[ddr, phantom, very near start, \"{ \\lrcorner }\"]",
+			"      & ${2:X} \\arrow[dd] \\\\\\",
+			"        \\\\\\",
+			"    ${3:S'} \\arrow[r]",
+			"      & ${4:S}",
+			"\\end{tikzcd}"
+		],
+		"description": "A dd pullback square."
+	  },
+
+	  "Double Pullback Square": {
+		"prefix": [ "double pullback square", "double pullback", "double cartesian square", "pullback: double", "diagram", "square" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+		 	"    ${1:X''} \\arrow[r] \\arrow[d]",
+			"          \\arrow[dr, phantom, very near start, \"{ \\lrcorner }\"]",
+			"      & ${2:X'} \\arrow[r] \\arrow[d]",
+			"          \\arrow[dr, phantom, very near start, \"{ \\lrcorner }\"]",
+			"        & ${3:X} \\arrow[d] \\\\\\",
+			"    ${4:S''} \\arrow[r]",
+			"      & ${5:S'} \\arrow[r]",
+			"        & ${6:S}",
+			"\\end{tikzcd}"
+		],
+		"description": "A pullback square."
+	  },
+
+	  "Pushout Square": {
+		"prefix": [ "pushout", "pushout square", "cocartesian square", "diagram", "square" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+		 	"    ${1:X} \\arrow[r] \\arrow[d]",
+			"      & ${2:Y} \\arrow[d] \\\\\\",
+			"    ${3:S} \\arrow[r]", 
+			"        & \\arrow[ul, phantom, very near start, \"{\\ulcorner}\"]",
+			"      ${4:T}",
+			"\\end{tikzcd}"
+		],
+		"description": "A pushout square."
+	  },
+
+	  "Pushout Square rr": {
+		"prefix": [ "pushout: rr", "pushout square rr", "cocartesian square rr", "diagram", "square"],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+		 	"    ${1:X} \\arrow[rr] \\arrow[d]",
+			"      & & ${2:Y} \\arrow[d] \\\\\\",
+			"    ${3:S} \\arrow[rr]",
+			"        & & \\arrow[ull, phantom, very near start, \"{\\ulcorner}\"]",
+			"      ${4:T}",
+			"\\end{tikzcd}"
+		],
+		"description": "A rr pushout square."
+	  },
+
+	  "Pushout Square rrdd": {
+		"prefix": [ "pushout: rrdd", "pushout square rrdd", "cocartesian square rrdd", "diagram", "square" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+		 	"    ${1:X} \\arrow[rr] \\arrow[dd]",
+			"      & & ${2:Y} \\arrow[dd] \\\\\\",
+			"        \\\\\\",
+			"    ${3:S} \\arrow[rr]",
+			"        & & \\arrow[uull, phantom, very near start, \"{\\ulcorner}\"]",
+			"      ${4:T}",
+			"\\end{tikzcd}"
+		],
+		"description": "A rrdd pushout square."
+	  },
+
+	  "Pushout Square dd": {
+		"prefix": [ "pushout: dd", "pushout square dd", "cocartesian square dd", "diagram", "square" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+		 	"    ${1:X} \\arrow[r] \\arrow[dd]",
+			"      & ${2:Y} \\arrow[dd] \\\\\\",
+			"        \\\\\\",
+			"    ${3:S} \\arrow[r]", 
+			"        & \\arrow[uul, phantom, very near start, \"{\\ulcorner}\"]",
+			"      ${4:T}",
+			"\\end{tikzcd}"
+		],
+		"description": "A dd pushout square."
+	  },
+
+	  "Double Pushout Square": {
+		"prefix": [ "double pushout square", "double pushout", "double cocartesian square", "pushout: double", "diagram", "square" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+		 	"    ${1:X''} \\arrow[r] \\arrow[d]",
+			"      & ${2:X'} \\arrow[r] \\arrow[d]",
+			"        & ${3:X} \\arrow[d] \\\\\\",
+			"    ${4:S''} \\arrow[r]",
+			"      & ${5:S'} \\arrow[r]", 
+			"          \\arrow[ul, phantom, very near start, \"{\\ulcorner}\"]",
+			"          & \\arrow[ul, phantom, very near start, \"{\\ulcorner}\"]",
+			"        ${6:S}",
+			"\\end{tikzcd}"
+		],
+		"description": "A pullback square."
+	  },
+
+	  //
+      //   Triangles
+	  //
+
+	  "Slice Triangle": {
+		"prefix": ["slice triangle", "commutative slice triangle", "diagram", "triangle" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+		 	"    ${1:X} \\arrow[rr] \\arrow[rd]", 
+			"      & & ${2:Y} \\\\\\",
+			"    & ${3:S} \\arrow[ru, leftarrow] ",
+			"\\end{tikzcd}"
+		],
+		"description": "A slice triangle."
+	  },
+
+	  "Coslice Triangle": {
+		"prefix": [ "coslice triangle", "commutative coslice triangle", "diagram", "triangle" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+		    "      & ${1:S} \\arrow[rd] \\\\\\",
+		 	"    ${2:X} \\arrow[ru, leftarrow] \\arrow[rr]", 
+			"        && ${3:Y}",
+			"\\end{tikzcd}"
+		],
+		"description": "A coslice triangle."
+	  },
+
+	  //
+	  //    Cubes
+	  //
+
+	  "Cube": {
+		"prefix": [ "cube", "commutative cube" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}[row sep=scriptsize, column sep=scriptsize]",
+		    "    & f^* E_V \\arrow[dl] \\arrow[rr] \\arrow[dd]", 
+			"      & & E_V \\arrow[dl] \\arrow[dd] \\\\\\",
+			"    f^* E \\arrow[rr, crossing over] \\arrow[dd]", 
+			"      & & E \\\\\\",
+			"    & U \\arrow[dl] \\arrow[rr]", 
+			"      & & V \\arrow[dl] \\\\\\",
+			"    M \\arrow[rr]", 
+			"      & & N \\arrow[from=uu, crossing over] \\\\\\",
+			"\\end{tikzcd}"
+		],
+		"description": "A commutative cube."
+	  },
+
+	  //
+	  //    Exact Sequences
+	  //
+
+	  "Exact Sequence": {
+		"prefix": [ "exact sequence" , "sequence" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+		    "    ${1:A} \\arrow[r]", 
+			"      & ${2:B} \\arrow[r]", 
+			"        & ${3:C}",
+			"\\end{tikzcd}"
+		],
+		"description": "A short exact sequence."
+	  },
+
+	  "Short Exact Sequence": {
+		"prefix": [ "short exact sequence", "exact sequence: short", "exact triple", "sequence" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+		    "    ${1:0} \\arrow[r]", 
+			"      & ${2:A} \\arrow[r]", 
+			"        & ${3:B} \\arrow[r]", 
+			"          & ${4:C} \\arrow[r]", 
+			"            & ${1}",
+			"\\end{tikzcd}"
+		],
+		"description": "An exact sequence."
+	  },
+
+	  "Split Short Exact Sequence": {
+		"prefix": [ "split short exact sequence", "exact sequence: short, split", "sequence" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+		    "    ${1:0} \\arrow[r]", 
+			"      & ${2:A} \\arrow[r]", 
+			"        & ${3:B} \\arrow[r] \\arrow[r, leftarrow, bend left = 20, dashed]", 
+			"          & ${4:C} \\arrow[r]", 
+			"            & ${1}",
+			"\\end{tikzcd}"
+		],
+		"description": "A split short exact sequence."
+	  },
+
+	  "Snake": {
+		"prefix": [ "snake", "exact sequence: snake", "sequence" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+		    "    ${1:A} \\arrow[r]",
+            "        & ${2:B} \\arrow[r]",
+			"            \\arrow[d, phantom, \"\"{coordinate, name=Z}]",
+			"          &  ${3:C} \\arrow[dll,",
+			"             \"{\\partial}\",",
+			"             swap,",
+			"             rounded corners,",
+			"             to path={ -- ([xshift=2ex]\\tikztostart.east)",
+			"             |- (Z) [near end]\\tikztonodes",
+			"             -| ([xshift=-2ex]\\tikztotarget.west)",
+			"             -- (\\tikztotarget)}] \\\\\\",
+			"        ${4:D} \\arrow[r]",
+			"          & ${5:E} \\arrow[r]",
+			"            & ${6:F}",
+			"\\end{tikzcd}"
+		],
+		"description": "A snake sequence."
+	  },
+
+	  "Long Exact Sequence": {
+		"prefix": [ "long exact sequence", "exact sequence: long", "sequence" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+		    "    ${1:\\ldots} \\arrow[r]",
+		    "        & ${2:A} \\arrow[r]",
+            "            & ${3:B} \\arrow[r]",
+			"                \\arrow[d, phantom, \"\"{coordinate, name=Z}]",
+			"              &  ${4:C} \\arrow[dll,",
+			"                 \"{\\partial}\",",
+			"                 swap,",
+			"                 rounded corners,",
+			"                 to path={ -- ([xshift=2ex]\\tikztostart.east)",
+			"                 |- (Z) [near end]\\tikztonodes",
+			"                 -| ([xshift=-2ex]\\tikztotarget.west)",
+			"                 -- (\\tikztotarget)}] \\\\\\",
+			"            & ${5:D} \\arrow[r]",
+			"              & ${6:E} \\arrow[r]",
+			"                & ${7:F} \\arrow[r]",
+			"                  & ${1}",
+			"\\end{tikzcd}"
+		],
+		"description": "An long exact sequence sequence."
+	  },
+
+
+	  //
+	  //  Parallel pair of arrows
+	  //
+
+	  "Parallel Pair": {
+		"prefix": [ "parallel pair", "equalizer", "coequalizer", "pair" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+		    "    ${1:X}", 
+			"        \\arrow[r, shift left = 0.5em, \"${3:f}\"]", 
+			"        \\arrow[r, shift right = 0.5em, swap, \"${4:g}\"]", 
+			"      & ${2:Y}",
+			"\\end{tikzcd}"
+		],
+		"description": "A parallel pair of arrows."
+	  },
+
+	  "Reflexive Pair": {
+		"prefix": [ "pair: reflexive", "reflexive pair", "pair" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+		    "    ${1:X}", 
+			"        \\arrow[r, shift left = 0.5em, \"${3:f}\"]", 
+			"        \\arrow[r, shift right = 0.5em, swap, \"${4:g}\"]",
+			"        \\arrow[r, leftarrow, dotted, \"${5:s}\" description]", 
+			"      & ${2:Y}",
+			"\\end{tikzcd}"
+		],
+		"description": "A parallel pair of arrows."
+	  },
+
+	  //
+	  //    Simplicial Things
+	  //
+
+	  "Simplicial Object": {
+		"prefix": [ "simplicial object", "cech nerve", "simplicial" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+		    "    ${1:\\dots}", 
+			"        \\arrow[r, leftarrow, shift left = 0.5em]", 
+			"        \\arrow[r, shift left = 0.25em]", 
+			"        \\arrow[r, leftarrow]", 
+			"        \\arrow[r, shift right = 0.25em]", 
+			"        \\arrow[r, leftarrow, shift right = 0.5em]",
+			"      & ${2:X_{1}}", 
+			"          \\arrow[r, leftarrow, shift left = 0.25em]", 
+			"          \\arrow[r]", 
+			"          \\arrow[r, leftarrow, shift right = 0.25em]",
+			"        &  ${3:X_{0}}",
+			"\\end{tikzcd}"
+		],
+		"description": "A simplicial object."
+	  },
+
+	  "Cosimplicial Object": {
+		"prefix": [ "cosimplicial object", "simplicial" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+			"    ${1:X_{0}}", 
+			"        \\arrow[r, shift left = 0.25em]", 
+			"        \\arrow[r, leftarrow]", 
+			"        \\arrow[r, shift right = 0.25em]",
+			"      &  ${2:X_{1}}", 
+			"          \\arrow[r, shift left = 0.5em]", 
+			"          \\arrow[r, leftarrow, shift left = 0.25em]", 
+			"          \\arrow[r]", 
+			"          \\arrow[r, leftarrow, shift right = 0.25em]", 
+			"          \\arrow[r, shift right = 0.5em]",
+		    "        &  ${3:\\dots}",
+			"\\end{tikzcd}"
+		],
+		"description": "A cosimplicial object."
+	  },
+
+	  "Augmented Simplicial Object": {
+		"prefix": [ "augmented simplicial object", "simplicial object: augmented", "cech nerve", "simplicial" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+		    "    ${1:\\dots}", 
+			"        \\arrow[r, leftarrow, shift left = 0.5em]", 
+			"        \\arrow[r, shift left = 0.25em]", 
+			"        \\arrow[r, leftarrow]", 
+			"        \\arrow[r, shift right = 0.25em]", 
+			"        \\arrow[r, leftarrow, shift right = 0.5em]",
+			"      &  ${2:X_{1}}", 
+			"          \\arrow[r, leftarrow, shift left = 0.25em]", 
+			"          \\arrow[r]", 
+			"          \\arrow[r, leftarrow, shift right = 0.25em]",
+			"        &  ${3:X_{0}}", 
+			"            \\arrow[r]",
+			"          & ${4:X_{-1}}",
+			"\\end{tikzcd}"
+		],
+		"description": "An augmented simplicial object."
+	  },
+
+	  "Augmented Cosimplicial Object": {
+		"prefix": [ "augmented cosimplicial object", "cosimplicial object: augmented", "simplicial" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+			"    ${1:X_{-1}}", 
+			"        \\arrow[r]",
+			"      &  ${2:X_{0}}", 
+			"          \\arrow[r, shift left = 0.25em]", 
+			"          \\arrow[r, leftarrow]", 
+			"          \\arrow[r, shift right = 0.25em]",
+			"        &  ${3:X_{1}}", 
+			"            \\arrow[r, shift left = 0.5em]",
+			"            \\arrow[r, leftarrow, shift left = 0.25em]", 
+			"            \\arrow[r]", 
+			"            \\arrow[r, leftarrow, shift right = 0.25em]", 
+			"            \\arrow[r, shift right = 0.5em]",
+		    "          &  ${4:\\dots}",
+			"\\end{tikzcd}"
+		],
+		"description": "An augmented cosimplicial object."
+	  },
+
+	  //
+	  //    Adjunctions and Natural Transformations
+	  //
+
+	  "Adjunction": {
+		"prefix": [ "adjunction" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+			"    ${1:\\mathcal{C}}", 
+			"        \\arrow[r, bend left = 25, \"${3:F}\"{name=D}]", 
+			"        \\arrow[r, leftarrow, bend right = 25, swap, \"${4:G}\"{name=C}]", 
+			"          \\arrow[d, from=D, to=C, phantom, \"{\\bot}\"]", 
+			"      & ${2:\\mathcal{D}}",
+			"\\end{tikzcd}"
+		],
+		"description": "An adjunction."
+	  },
+
+	  "Coadjunction": {
+		"prefix": [ "coadjunction", "adjunction: backwards"],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+			"    ${1:\\mathcal{C}}", 
+			"        \\arrow[r, bend left = 25, \"${3:F}\"{name=D}]", 
+			"        \\arrow[r, leftarrow, bend right = 25, swap, \"${4:G}\"{name=C}]", 
+			"          \\arrow[d, from=D, to=C, phantom, \"{\\top}\"]", 
+			"       & ${2:\\mathcal{D}}",
+			"\\end{tikzcd}"
+		],
+		"description": "Also an adjunction, but with the arrows reversed."
+	  },
+
+	  "Natural Transformation": {
+		"prefix": [ "natural transformation", "transformation" ],
+		"body": 
+		[   
+			"\\begin{tikzcd}",
+			"    ${1:\\mathcal{C}}", 
+			"        \\arrow[r, bend left = 25, \"${3:F}\"]", 
+			"          \\arrow[r, phantom, bend left = 35, \"\"{name=S, below}]", 
+			"        \\arrow[r, leftarrow, bend right = 25, swap, \"${4:G}\"]", 
+			"          \\arrow[r, leftarrow, phantom, bend right = 35, \"\"{name=T, above}]", 
+			"        \\arrow[d, Rightarrow, from=S, to=T]", 
+			"      & ${2:\\mathcal{D}}",
+			"\\end{tikzcd}"
+		],
+		"description": "An adjunction."
+	  },
+
+
+}
